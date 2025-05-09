@@ -1,4 +1,4 @@
-url,title,text,university,country,visa_status,activism_status
+url,title,text,university,countries,visa_status,activism_status
 https://www.cnn.com/2025/03/31/us/what-we-know-college-activists-immigration-hnk/index.html,What we know about the college activists detained by federal agents,"CNN —
 
 Nearly a dozen students and faculty members at colleges across the country are known to have been detained by federal agents amid the Trump administration’s crackdown on immigration, which on college campuses, has taken aim at pro-Palestinian student activists and Israel critics.
@@ -135,7 +135,9 @@ CNN has reached out to the State Department for comment.
 
 CNN’s Gloria Pazmino and Sean Lyngaas contributed to this report.
 
-This story has been updated with additional information.",CNN,Israel,True,False
+This story has been updated with additional information.","Georgetown University, the University of Alabama, Columbia’s School of International and Public Affairs, St. Olaf College/Facebook
+
+The University of Minnesota, Tufts University, the University of Minnesota, Columbia University, Tufts University’s Somerville, Columbia University's, St. Olaf College, Brown Medical School, Graduate School of Architecture, Planning and Preservation, Harvard Medical School","Gaza, Khalil, Massachusetts, Günaydin, Lebanon, Ukraine, Louisiana, the United Kingdom, Somerville, Öztürk, Israel, Russia, Northfield, Washington, St. Paul, Miami, Canada, France, Virginia, Texas, New York, the United States, Minnesota, Gambia, US, Suriname, Alexandria, Palestine, Boston, the West Bank, New Jersey, Africana",True,False
 https://www.aljazeera.com/news/2025/4/18/us-revokes-nearly-1500-student-visas-who-are-the-targets,"US revokes nearly 1,700 student visas: Who are the targets?","Hundreds of students have had their visas cancelled and find themselves in limbo. Some have been arrested.
 
 Hundreds of students and recent graduates have seen their United States visas revoked by immigration officials since President Donald Trump took office for a second time on January 20, and several have also been arrested.
@@ -408,7 +410,13 @@ Advertisement
 
 Shortly after Mahdawi’s detention, District Judge William Sessions ordered that he must not be taken from the state of Vermont or the US. Mahdawi is the co-founder of a Palestinian student group at Columbia University alongside Khalil.
 
-It is unclear where he is being held.",Trump,United States,True,True
+It is unclear where he is being held.","Dartmouth College
+
+• Legal, the University of Maryland, Tufts University, Georgetown University
+
+• Legal, Columbia University, Cornell University
+
+• Legal, The Ohio State University, Lafayette College, George Mason University","Gaza, Khalil, America, Alvarado, Massachusetts, New York City, Jena, Louisiana, the United Kingdom, Somerville, Manhattan, Iraq, Israel, New Hampshire, Montana, Washington, DC, Ozturk, Ithaca, Cornell, United States, Canada, Afghanistan, Virginia, Texas, Michigan, the United States, New York, Pennsylvania, US, Alexandria, Palestine, Boston, Vermont, Africana",True,True
 https://www.insidehighered.com/news/global/international-students-us/2025/04/21/five-key-takeaways-tracking-student-visa,Five Key Takeaways From Tracking Student Visa Revocations,"On April 7, amid reports that the federal government was detaining international students and revoking their visas, Inside Higher Ed began collecting and cross-checking data in an effort to track exactly how many students were affected—and at which institutions. Our goal was to understand the scope of the federal government’s involvement in the visa process and what it means for international students and the colleges and universities they attend.
 
 Over the past two weeks, more than 1,500 students—representing several hundred colleges and universities, as well as state systems—have had a sudden or unexpected change in their Student and Exchange Visitor Information System (SEVIS) listing, or their F-1 or J-1 visa status.
@@ -473,7 +481,7 @@ The federal government has argued in court filings that the lawsuits should be d
 
 But some students aren’t waiting for the courts to weigh in. At least five have left the country voluntarily, according to news reports. And others never got the chance to file suit before the federal government took action. Fewer than 10 students have been arrested, detained or deported.
 
-We’re adding to our student-level database and continuing to update the map, so check back here for daily updates. As we learn more about those affected, we’ll share that data, too.",Student and Exchange Visitor Information System,Arizona,True,True
+We’re adding to our student-level database and continuing to update the map, so check back here for daily updates. As we learn more about those affected, we’ll share that data, too.","the New School, the University of California, Berkeley, Webster University, Pima Community College, George Washington University, Northwestern University, Emerson College, Tufts University, the University of North Carolina, Columbia University, the University of Minnesota, New York University, the University of Washington, Washington University, Northwest Missouri State University, The University of Michigan, the University of Michigan, the University of North Carolina at","U.S., China, India, Saudi Arabia, Turkey, Canada, St. Louis, Japan, Arizona, Israel, Kuwait, Charlotte, n’t",True,True
 https://www.democratandchronicle.com/story/news/2025/04/17/how-many-student-visas-have-been-revoked-in-ny-under-trump-the-latest/83100642007/,How many student visas have been revoked in NY under Trump? Here’s what we know,"At least 70 students attending New York universities and colleges have had their student visas revoked by the Trump administration, according to several school officials.
 
 Some of the cancellations, which overall reflect a small percentage of the estimated 1.5 million international students studying in the United States, according to USA TODAY, appear to be connected to things as minor as roommate disputes or as off-campus traffic tickets, while others appear to be connected to pro-Palestinian protest participation.
@@ -530,4 +538,4 @@ Currently, 135,813 international students study in New York state, according to 
 
 Contributing: USA TODAY
 
-Emily Barnes reports on consumer-related issues for the USA TODAY Network’s New York Connect Team, focusing on scam and recall-related topics. Follow her on X and Instagram @byemilybarnes. Get in touch at ebarnes@gannett.com.",USA TODAY,New York,True,True
+Emily Barnes reports on consumer-related issues for the USA TODAY Network’s New York Connect Team, focusing on scam and recall-related topics. Follow her on X and Instagram @byemilybarnes. Get in touch at ebarnes@gannett.com.",,"U.S., New York, the United States",True,True

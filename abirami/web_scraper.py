@@ -5,7 +5,7 @@ import spacy
 
 #Load the spacy English model for natural language processing
 nlp = spacy.load("en_core_web_sm")
-#List of urls containing articles to webscrape
+#List of urls containing articles to webscraper
 urls = ['https://www.cnn.com/2025/03/31/us/what-we-know-college-activists-immigration-hnk/index.html',
         'https://www.aljazeera.com/news/2025/4/18/us-revokes-nearly-1500-student-visas-who-are-the-targets',
         'https://www.insidehighered.com/news/global/international-students-us/2025/04/21/five-key-takeaways-tracking-student-visa',
@@ -50,7 +50,7 @@ def extract_info():
     #Read the raw_articles.csv file and load the scraped articles
     df = pd.read_csv("raw_articles.csv")
 
-    universities = []
+    all_universities = []
     countries = []
     visa_status = []
     activism_status = []
@@ -61,32 +61,22 @@ def extract_info():
         orgs = [ent.text for ent in doc.ents if ent.label_ == "ORG"]
         gpes = [ent.text for ent in doc.ents if ent.label_ == "GPE"]
 
+        university_keywords = ["university", "college", "institute", "academy", "school"]
+        university_matches = [orpyg for org in orgs if any(keyword in org.lower() for keyword in university_keywords)]
+        all_universities.append(", ". join(set(university_matches)))
+        countries.append(", ".join(set(gpes)))
+
         #Check for the keywords of visa and activism after converting the text all to lower case as it is case sensitive
         lowercase_text = text.lower()
         visa_status.append("visa" in lowercase_text)
         activism_status.append("activism" in lowercase_text)
-
-        #Store the first university if orgs is not empty
-        if orgs:
-            universities.append(orgs[0])
-        else:
-            universities.append("")
-        
-        #Store the first country if gpes is not empty
-        if gpes:
-            countries.append(gpes[0])
-        else:
-            countries.append("")
-        
-        #universities.append(orgs[0] if orgs else "")
-        #countries.append(gpes[0] if gpes else "")
     
     #Add the extracted features to the original data frame and save it in a new csv file called extracted_articles.csv
-    df["university"] = universities
-    df["country"] = countries
+    df["university"] = all_universities
+    df["countries"] = countries
     df["visa_status"] = visa_status
     df["activism_status"] = activism_status
-    df.to_csv("extracted_articles.csv", index=False)
+    df.to_csv("extracted_articles.csv", index = False)
 
 scrape_urls(urls)
 extract_info()

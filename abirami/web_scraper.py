@@ -1,6 +1,7 @@
 import pandas as pd
 from newspaper import Article 
 import spacy
+import difflib
 #import re
 
 #Load the spacy English model for natural language processing
@@ -45,38 +46,84 @@ def scrape_urls(urls):
     print(df.head())
     df.to_csv("raw_articles.csv", index=False)
 
-#Function to extract the country, university, visa status, and activism status
+def is_partial_match(existing_name, new_name):
+    # Check if one name is a part of the other OR a close match
+    return (
+        new_name in existing_name or
+        existing_name in new_name or
+        difflib.SequenceMatcher(None, existing_name, new_name).ratio() > 0.85
+    )
+
 def extract_info():
-    #Read the raw_articles.csv file and load the scraped articles
     df = pd.read_csv("raw_articles.csv")
+    rows = {}
 
-    all_universities = []
-    countries = []
-    visa_status = []
-    activism_status = []
+    university_keywords = ["university", "college", "institute", "school", "academy"]
 
-    for text in df["text"]:
+    for i, row in df.iterrows():
+        text = row["text"]
+        url = row["url"]
         doc = nlp(text)
-        #Extract organizations with "ORG" and countries/locations with "GPE"
+
+        lowercase_text = text.lower()
+        visa_status = "visa" in lowercase_text
+        activism_status = "activism" in lowercase_text
+
+        persons = [ent.text for ent in doc.ents if ent.label_ == "PERSON"]
         orgs = [ent.text for ent in doc.ents if ent.label_ == "ORG"]
         gpes = [ent.text for ent in doc.ents if ent.label_ == "GPE"]
 
-        university_keywords = ["university", "college", "institute", "academy", "school"]
-        university_matches = [orpyg for org in orgs if any(keyword in org.lower() for keyword in university_keywords)]
-        all_universities.append(", ". join(set(university_matches)))
-        countries.append(", ".join(set(gpes)))
+        potential_universities = [org for org in orgs if any(k in org.lower() for k in university_keywords)]
 
-        #Check for the keywords of visa and activism after converting the text all to lower case as it is case sensitive
-        lowercase_text = text.lower()
-        visa_status.append("visa" in lowercase_text)
-        activism_status.append("activism" in lowercase_text)
-    
-    #Add the extracted features to the original data frame and save it in a new csv file called extracted_articles.csv
-    df["university"] = all_universities
-    df["countries"] = countries
-    df["visa_status"] = visa_status
-    df["activism_status"] = activism_status
-    df.to_csv("extracted_articles.csv", index = False)
+        for sent in doc.sents:
+            sentence_persons = [person for person in persons if person in sent.text]
+            sentence_universities = [university for university in potential_universities if university in sent.text]
+            sentence_gpes = [gpe for gpe in gpes if gpe in sent.text]
+
+            for person in sentence_persons:
+                normalized_person = " ".join([part.capitalize() for part in person.split()])
+                
+                # Check for duplicate or partial match
+                matched_name = None
+                for existing_name in rows:
+                    if is_partial_match(existing_name, normalized_person):
+                        matched_name = existing_name
+                        break
+
+                person_key = matched_name if matched_name else normalized_person
+
+                if person_key not in rows:
+                    rows[person_key] = {
+                        "person_name": person_key,
+                        "universities": set(),
+                        "countries": set(),
+                        "visa_status": visa_status,
+                        "activism_status": activism_status,
+                        "source_url": url
+                    }
+
+                rows[person_key]["universities"].update(sentence_universities)
+                rows[person_key]["countries"].update(sentence_gpes)
+                if visa_status:
+                    rows[person_key]["visa_status"] = True
+                if activism_status:
+                    rows[person_key]["activism_status"] = True
+                if url not in rows[person_key]["source_url"]:
+                    rows[person_key]["source_url"] += ", " + url
+
+    # Final output
+    person_df = pd.DataFrame([
+        {
+            "person_name": key,
+            "universities": ", ".join(sorted(value["universities"])),
+            "countries": ", ".join(sorted(value["countries"])),
+            "visa_status": value["visa_status"],
+            "activism_status": value["activism_status"],
+            "source_url": value["source_url"]
+        }
+        for key, value in rows.items()
+    ])
+    person_df.to_csv("extracted_by_person_filtered.csv", index=False)
 
 scrape_urls(urls)
 extract_info()

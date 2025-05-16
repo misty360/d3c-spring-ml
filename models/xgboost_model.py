@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import shap
 
 #Load dataset and get data info
-df = pd.read_csv('/articles.csv') 
+df = pd.read_csv("./abirami/extracted_by_person_filtered.csv") 
 df.head()
 df.shape
 df.describe()

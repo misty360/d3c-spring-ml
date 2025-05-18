@@ -1,7 +1,7 @@
 import pandas as pd
 import hashlib
 
-df = pd.read_csv("scripts/extracted_by_person_filtered.csv")
+df = pd.read_csv("scripts/negative_data.csv")
 
 def generate_student_id(name, index):
     return 'S' + hashlib.sha1(f'{name}_{index}'.encode()).hexdigest()[:8]

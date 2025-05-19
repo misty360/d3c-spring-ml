@@ -1,33 +1,32 @@
 student_id,universities,countries,visa_status,activism_status,source_url,deported
-S2995b623,"University of California, Davis",China,True,False,https://www.linkedin.com/in/justin-ong-de/,NO
-Sab549e90,Palomar College,Japan,True,False,https://www.linkedin.com/in/yuki-ogihara-2aaa15269/ ,NO
-S7ebfecca,California State University San Marcos,Mexico,True,False,https://www.linkedin.com/in/veronica-leyva-espino-8861921b4/,NO
-S9d00ce00,"University of North Carolina, Chapel Hill",Vietnam,True,False,,NO
-Seedc4129,Southern Utah University,South Korea,True,False,https://www.linkedin.com/in/sungwoo-choi-222b9624a/,NO
-S413d10f6,Valencia College,Venezuela,True,False,,NO
-S175c6d3c,"University of California, Davis",Japan,True,False,,NO
-Sb05c4bbc,Wilmington University,Brazil,True,False,https://www.linkedin.com/in/mariliarosa2025/,NO
-S33652a75,"University of California, Santa Barbara",,,,,NO
-Sda702aeb,University of Windsor,India,True,False,https://in.linkedin.com/in/harry-singh-46301970 ,NO
-Se783adf9,Centennial College,India,True,False,,NO
-S059d3ad6,Waldorf University ,Columbia,True,False,https://www.linkedin.com/in/diego-prada-970743339/,NO
-S038dc6cb,Northern State University,Portugal,True,False,https://www.linkedin.com/in/luana-matos-rocha/,NO
-S490db635,"University of California, Riverside",China,True,False,,NO
-S9efe684a,"University of California, Berkeley ",Switzerland,True,True,https://www.linkedin.com/in/kirstentomas/,NO
-Se756b7ea,Grand Canyon University,Brazil,True,False,https://www.linkedin.com/in/raphaela-bravo/?locale=en_US ,NO
-S41e35967,Florida State University,Korea,True,False,https://www.linkedin.com/in/hyunwoong-kim-903b41a5/ ,NO
-Sc96a8837,"University of California, Davis",Korea,True,False,https://www.linkedin.com/in/jionebaek/,NO
-Se1121390,George Washington School of Business,Venezuela,True,False,,NO
-S014af364,Johns Hopkins University,China,True,False,,NO
-Sa79d4e42,"University of California, Los Angeles",Japan,True,False,,NO
-S40e14d10,Indiana University Bloomington,China,True,False,https://www.linkedin.com/in/zhuzhiy1996,NO
-S44ce8463,"University of California, Davis",China,True,False,https://www.linkedin.com/in/carrie-liu-2a526825a/,NO
-Sae281c1d,"University of California, Berkeley",China,True,False,https://www.linkedin.com/in/yuliang-guo/,NO
-Sc319e577,"University of California, Davis",China,True,True,https://www.linkedin.com/in/mia-zhou-nice/,NO
-Sd6798b70,"University of California, Davis",China,True,True,https://www.linkedin.com/in/yizhou-fang-8367a1332/,NO
-Sfbe8cfe9,"University of California, Davis",China,True,True,https://www.linkedin.com/in/yuanjiu-bai-8b8512272/,NO
-Scc3b50d3,"University of California, Irvine",Taiwan,True,False,https://www.linkedin.com/in/chun-ying-huang-a373005b,NO
-S9722d9cc,"University of California, Davis",China,True,True,https://www.linkedin.com/in/fu-yu-4a726824a/,NO
-S76d066a0,"University of California, Davis",China,True,True,https://www.linkedin.com/in/gary-zhang-a852a9298/,NO
-S0ea9cc3c,Southern Utah University,Korea,True,True,https://www.linkedin.com/in/sungwoo-choi-222b9624a/,
-Sbf612ce3,Stanford University,China,True,True,https://www.linkedin.com/in/chuting-sun-e-i-t-597962241/,
+S2995b623,"University of California, Davis",China,TRUE,FALSE,https://www.linkedin.com/in/justin-ong-de/,NO
+Sab549e90,Palomar College,Japan,TRUE,FALSE,https://www.linkedin.com/in/yuki-ogihara-2aaa15269/ ,NO
+S7ebfecca,California State University San Marcos,Mexico,TRUE,FALSE,https://www.linkedin.com/in/veronica-leyva-espino-8861921b4/,NO
+S9d00ce00,"University of North Carolina, Chapel Hill",Vietnam,TRUE,FALSE,,NO
+Seedc4129,Southern Utah University,South Korea,TRUE,FALSE,https://www.linkedin.com/in/sungwoo-choi-222b9624a/,NO
+S413d10f6,Valencia College,Venezuela,TRUE,FALSE,,NO
+S175c6d3c,"University of California, Davis",Japan,TRUE,FALSE,,NO
+Sb05c4bbc,Wilmington University,Brazil,TRUE,FALSE,https://www.linkedin.com/in/mariliarosa2025/,NO
+Sda702aeb,University of Windsor,India,TRUE,FALSE,https://in.linkedin.com/in/harry-singh-46301970 ,NO
+Se783adf9,Centennial College,India,TRUE,FALSE,,NO
+S059d3ad6,Waldorf University ,Columbia,TRUE,FALSE,https://www.linkedin.com/in/diego-prada-970743339/,NO
+S038dc6cb,Northern State University,Portugal,TRUE,FALSE,https://www.linkedin.com/in/luana-matos-rocha/,NO
+S490db635,"University of California, Riverside",China,TRUE,FALSE,,NO
+S9efe684a,"University of California, Berkeley ",Switzerland,TRUE,TRUE,https://www.linkedin.com/in/kirstentomas/,NO
+Se756b7ea,Grand Canyon University,Brazil,TRUE,FALSE,https://www.linkedin.com/in/raphaela-bravo/?locale=en_US ,NO
+S41e35967,Florida State University,Korea,TRUE,FALSE,https://www.linkedin.com/in/hyunwoong-kim-903b41a5/ ,NO
+Sc96a8837,"University of California, Davis",Korea,TRUE,FALSE,https://www.linkedin.com/in/jionebaek/,NO
+Se1121390,George Washington School of Business,Venezuela,TRUE,FALSE,,NO
+S014af364,Johns Hopkins University,China,TRUE,FALSE,,NO
+Sa79d4e42,"University of California, Los Angeles",Japan,TRUE,FALSE,,NO
+S40e14d10,Indiana University Bloomington,China,TRUE,FALSE,https://www.linkedin.com/in/zhuzhiy1996,NO
+S44ce8463,"University of California, Davis",China,TRUE,FALSE,https://www.linkedin.com/in/carrie-liu-2a526825a/,NO
+Sae281c1d,"University of California, Berkeley",China,TRUE,FALSE,https://www.linkedin.com/in/yuliang-guo/,NO
+Sc319e577,"University of California, Davis",China,TRUE,TRUE,https://www.linkedin.com/in/mia-zhou-nice/,NO
+Sd6798b70,"University of California, Davis",China,TRUE,TRUE,https://www.linkedin.com/in/yizhou-fang-8367a1332/,NO
+Sfbe8cfe9,"University of California, Davis",China,TRUE,TRUE,https://www.linkedin.com/in/yuanjiu-bai-8b8512272/,NO
+Scc3b50d3,"University of California, Irvine",Taiwan,TRUE,FALSE,https://www.linkedin.com/in/chun-ying-huang-a373005b,NO
+S9722d9cc,"University of California, Davis",China,TRUE,TRUE,https://www.linkedin.com/in/fu-yu-4a726824a/,NO
+S76d066a0,"University of California, Davis",China,TRUE,TRUE,https://www.linkedin.com/in/gary-zhang-a852a9298/,NO
+S0ea9cc3c,Southern Utah University,Korea,TRUE,TRUE,https://www.linkedin.com/in/sungwoo-choi-222b9624a/,
+Sbf612ce3,Stanford University,China,TRUE,TRUE,https://www.linkedin.com/in/chuting-sun-e-i-t-597962241/,

@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report, confusion_matrix
 
 # 1. Load the data
-df = pd.read_csv("anonymized_negative.csv")  # Replace with actual path
+df = pd.read_csv("temporarydata.csv")  # Replace with actual path
 
 # 2. Preprocess
 # Drop unnecessary columns

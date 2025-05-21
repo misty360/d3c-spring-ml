@@ -10,4 +10,4 @@ df['student_id'] = [generate_student_id(name, idx) for idx, name in enumerate(df
 df = df.drop(columns=['person_name'])
 df = df[['student_id'] + [col for col in df.columns if col != 'student_id']]
 
-df.to_csv('anonymized_students.csv', index=False)
+df.to_csv('anonymized_negative.csv', index=False)

@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+import joblib
 
 #Load dataset and get data info
 df = pd.read_csv('master_data_set.csv')
@@ -80,8 +80,10 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 model = xgb.XGBClassifier(eval_metric='logloss')
 model.fit(X_train, y_train)
 
-
-
+# Save the trained model and encoders
+joblib.dump(model, "xgb_model.pkl")
+joblib.dump(uni_encoder, "uni_encoder.pkl")
+joblib.dump(country_encoder, "country_encoder.pkl")
 
 # 4. Plot feature importance
 xgb.plot_importance(model, importance_type="weight", title="Feature Importance", height=0.8)

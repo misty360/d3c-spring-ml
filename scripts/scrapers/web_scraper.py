@@ -15,36 +15,24 @@ university_keywords = ["university", "college", "institute", "school", "academy"
 
 # List of URLs
 urls = [
-    'https://www.cnn.com/2025/03/31/us/what-we-know-college-activists-immigration-hnk/index.html',
-    'https://www.aljazeera.com/news/2025/4/18/us-revokes-nearly-1500-student-visas-who-are-the-targets',
-    'https://www.insidehighered.com/news/global/international-students-us/2025/04/21/five-key-takeaways-tracking-student-visa',
-    'https://www.democratandchronicle.com/story/news/2025/04/17/how-many-student-visas-have-been-revoked-in-ny-under-trump-the-latest/83100642007/',
-    'https://time.com/7272060/international-students-targeted-trump-ice-detention-deport-campus-palestinian-activism/',
-    'https://www.nytimes.com/2025/03/27/us/students-trump-ice-detention.html',
-    'https://www.nbcnews.com/news/asian-america/international-students-revoked-visas-reasons-why-rcna200313',
-    'https://abcnews.go.com/Politics/foreign-college-students-targeted-deportation/story?id=120210587',
-    'https://thepienews.com/applyboard-launches-new-ai-feature-for-student-applications/',
-    'https://www.justsecurity.org/109069/u-s-ai-driven-catch-and-revoke-initiative-threatens-first-amendment-rights/',
-    'https://sahanjournal.com/education/international-students-data-collection-ice-arrests/',
-    'https://www.bbc.com/news/articles/c20xq5nd8jeo',
-    'https://www.nafsa.org/reports-of-actions-targeting-international-students',
-    'https://www.theguardian.com/us-news/2025/apr/10/how-many-student-visas-revoked',
-    'https://www.usatoday.com/story/graphics/2025/05/03/how-many-international-students-visas-revoked/83216625007/',
-    'https://www.news-leader.com/story/news/education/2025/04/15/missouri-state-university-international-student-visas-revoked/83096413007/',
-    'https://capitolnewsillinois.com/news/chilling-silence-waves-of-illinois-international-university-students-lose-their-visas/',
-    'https://www.insidehighered.com/news/global/international-students-us/2025/04/07/where-students-have-had-their-visas-revoked',
-    'https://en.wikipedia.org/wiki/Catch_and_Revoke',
-    'https://www.nbcbayarea.com/news/local/student-visas-revoked-bay-area/3839632/',
-    'https://time.com/7284578/judge-orders-release-of-rumeysa-ozturk-tuft-student-detained-by-ice/',
-    'https://abc7news.com/post/dept-homeland-security-revokes-visas-uc-berkeley-stanford-international-students-tied-past-activism/16136682/',
-    'https://www.insidehighered.com/news/global/international-students-us/2025/04/07/where-students-have-had-their-visas-revoked',
-    'https://eccunion.com/news/2025/04/23/international-students-f-1-visa-revoked-at-el-camino/',
-    'https://timesofindia.indiatimes.com/world/us/warning-shot-over-political-activism-by-foreign-students-on-us-campuses-after-chinese-scholars-visa-is-revoked/articleshow/118814657.cms',
-    'https://www.washingtonpost.com/nation/2024/05/03/international-students-campus-protest-visas/',
-    'https://haitiantimes.com/2025/05/11/haitian-students-visa-revocation-trump-crackdown/',
-    'https://www.bigimmigrationlawblog.com/2025/04/the-new-risk-for-global-talent-f-1-sevis-terminations-and-student-visa-revocations/',
-    'https://en.wikipedia.org/wiki/Activist_deportations_in_the_second_Trump_presidency',
-    'https://www.npr.org/2025/04/22/nx-s1-5366021/international-students-face-visa-cancellations-despite-no-criminal-records'
+    "https://apnews.com/article/international-student-f1-visa-revoked-college-f12320b435b6bf9cf723f1e8eb8c67ae#",
+    "https://www.justsecurity.org/109069/u-s-ai-driven-catch-and-revoke-initiative-threatens-first-amendment-rights/", 
+    "https://sahanjournal.com/education/international-students-data-collection-ice-arrests/",
+    "https://www.bbc.com/news/articles/c20xq5nd8jeo",
+    "https://www.insidehighered.com/news/global/international-students-us/2025/05/16/ice-warns-international-students-more-sevis",
+    "https://apnews.com/article/international-student-status-restored-9e8a7cb90f4193ec52bf06edc5094cd9",
+    "https://www.pbs.org/newshour/nation/international-students-stripped-of-legal-status-in-the-u-s-are-piling-up-wins-in-court",
+    "https://www.bbc.com/news/articles/cgm8ekk173zo",
+    "https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news",
+    "https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news",
+    "https://www.pbs.org/newshour/politics/visa-cancellations-and-deportations-sow-panic-for-international-students",
+    "https://pennstatelaw.psu.edu/sites/default/files/FAQ-Understanding-Recent-International-Student-Visa-Revocations-and-Apprehensions_-Guidance-for-Colleges-Universities.pdf",
+    "https://www.nafsa.org/ie-magazine/students-at-risk",
+    "https://www.presidentsalliance.org/understanding-recent-international-student-visa-revocations-and-sevis-terminations/",
+    "https://www.acenet.edu/News-Room/Pages/ACE-Assns-Demand-Answers-Visa-Revocations.aspx",
+    "https://www.wusa9.com/article/news/nation-world/us-government-expands-grounds-canceling-international-students-legal-status/507-e12fe15f-2f73-4d04-aa0e-dfb2404b952f",
+    "https://www.ice.gov/news/releases/ice-releases-2022-sevp-annual-report",
+    "https://www.migrationpolicy.org/article/trump-2-immigration-first-100-days"
 ]
 
 # Check for vague/unhelpful university names
@@ -174,7 +162,7 @@ def extract_info():
         if value["universities"]  # Only include people with a university
     ])
 
-    person_df.to_csv("extracted_by_person_filtered.csv", index=False)
+    person_df.to_csv("updated_extracted_by_person_filtered.csv", index=False)
 
 # Run everything
 scrape_urls(urls)

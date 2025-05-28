@@ -54,7 +54,7 @@ if chance:
         "activism_status": activism_status
  
     }
-    response = requests.post("http://127.0.0.1:8000/predict", json=input_data)
+    response = requests.post("http://127.0.0.1:8501/predict", json=input_data)
     if response.status_code == 200:
         result = response.json()
         st.success(f"🧾 **Predicted Deportation Probability:** {result['deportation_probability']:.4%}")

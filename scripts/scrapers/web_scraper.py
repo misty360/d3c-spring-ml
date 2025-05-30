@@ -26,13 +26,11 @@ urls = [
     "https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news",
     "https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news",
     "https://www.pbs.org/newshour/politics/visa-cancellations-and-deportations-sow-panic-for-international-students",
-    "https://pennstatelaw.psu.edu/sites/default/files/FAQ-Understanding-Recent-International-Student-Visa-Revocations-and-Apprehensions_-Guidance-for-Colleges-Universities.pdf",
     "https://www.nafsa.org/ie-magazine/students-at-risk",
     "https://www.presidentsalliance.org/understanding-recent-international-student-visa-revocations-and-sevis-terminations/",
     "https://www.acenet.edu/News-Room/Pages/ACE-Assns-Demand-Answers-Visa-Revocations.aspx",
     "https://www.wusa9.com/article/news/nation-world/us-government-expands-grounds-canceling-international-students-legal-status/507-e12fe15f-2f73-4d04-aa0e-dfb2404b952f",
-    "https://www.ice.gov/news/releases/ice-releases-2022-sevp-annual-report",
-    "https://www.migrationpolicy.org/article/trump-2-immigration-first-100-days"
+    "https://www.ice.gov/news/releases/ice-releases-2022-sevp-annual-report"
 ]
 
 # Check for vague/unhelpful university names
@@ -87,7 +85,12 @@ def extract_info():
     for i, row in df.iterrows():
         text = row["text"]
         url = row["url"]
-        doc = nlp(text)
+        if isinstance(text, str) and text.strip():
+            doc = nlp(text)
+        else:
+            print(f"[Skipping] Invalid text input: {text} (type: {type(text)})")
+            return  # or continue, depending on whether you're in a loop or not
+
 
         lowercase_text = text.lower()
         visa_status = "visa" in lowercase_text

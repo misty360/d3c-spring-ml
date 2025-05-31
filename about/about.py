@@ -2,7 +2,9 @@
 import streamlit as st
 from PIL import Image, ImageOps
 
-def load_and_resize_image(img_path, size=(150, 150)):
+st.set_page_config(layout="wide")
+
+def load_and_resize_image(img_path, size=(200, 200)):
     try:
         image = Image.open(img_path)
         image = ImageOps.fit(image, size, method=Image.LANCZOS)  # Crop to fit square
@@ -52,19 +54,30 @@ team = [
 st.title("About")
 st.header("Meet the Team")
 
-for i in range(0, len(team), 3):
-    cols = st.columns(3)
-    for j in range(3):
-        if i + j < len(team):
-            member = team[i + j]
-            with cols[j]:
-                image = load_and_resize_image(member.get("img", ""))
-                if image:
-                    st.image(image, width=150)
-                st.subheader(member["name"])
-                st.write(f"**Role:** {member['role']}")
-                st.write(f"**Major:** {member['major']}")
-                st.write(f"**Year:** {member['year']}")
+# for i in range(0, len(team), 3):
+#     cols = st.columns(6)
+#     for j in range(3):
+#         if i + j < len(team):
+#             member = team[i + j]
+#             with cols[j]:
+#                 image = load_and_resize_image(member.get("img", ""))
+#                 if image:
+#                     st.image(image, width=150)
+#                 st.subheader(member["name"])
+#                 st.write(f"**Role:** {member['role']}")
+#                 st.write(f"**Major:** {member['major']}")
+#                 st.write(f"**Year:** {member['year']}")
+
+cols = st.columns(6)
+for idx, member in enumerate(team):
+    with cols[idx % 6]:
+        image = load_and_resize_image(member.get("img", ""))
+        if image:
+            st.image(image, width=170)
+        st.subheader(member["name"])
+        st.markdown(f"**Role:** {member['role']}  ")
+        st.markdown(f"**Major:** {member['major']}  ")
+        st.markdown(f"**Year:** {member['year']}  ")
 
 st.header("About the Model")
 st.write("We used an XGBoost classifier to predict the likelihood of being deported based off of 4 critical factors: unviersity, country of origin, visa status, and level of involvement in activism. XGBoost is a high-performance, ensemble-based machine learning algorithms, meaning it builds a series of decision trees in a sequential boosting manner to optimize prediction accuracy. We processed the categorical variables with OrdinalEncoder which maps each category, including unseen categories, to a numerical value. We trained the model using a labeled data set and split the training and test sets in an 80/20 ratio. We trained the model to allow for real-time prediction of deportation probability based on user-provided inputs.")

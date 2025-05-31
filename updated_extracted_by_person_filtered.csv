@@ -1,0 +1,21 @@
+person_name,universities,countries,visa_status,activism_status,source_url
+Trump,"the City University of New York
+
+An estimated 1,800",China,True,True,"https://apnews.com/article/international-student-f1-visa-revoked-college-f12320b435b6bf9cf723f1e8eb8c67ae#, https://www.justsecurity.org/109069/u-s-ai-driven-catch-and-revoke-initiative-threatens-first-amendment-rights/, https://sahanjournal.com/education/international-students-data-collection-ice-arrests/, https://www.bbc.com/news/articles/c20xq5nd8jeo, https://www.insidehighered.com/news/global/international-students-us/2025/05/16/ice-warns-international-students-more-sevis, https://apnews.com/article/international-student-status-restored-9e8a7cb90f4193ec52bf06edc5094cd9, https://www.pbs.org/newshour/nation/international-students-stripped-of-legal-status-in-the-u-s-are-piling-up-wins-in-court, https://www.bbc.com/news/articles/cgm8ekk173zo, https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news, https://www.pbs.org/newshour/politics/visa-cancellations-and-deportations-sow-panic-for-international-students, https://www.acenet.edu/News-Room/Pages/ACE-Assns-Demand-Answers-Visa-Revocations.aspx"
+Xiaotian Liu,Dartmouth College,China,True,False,"https://apnews.com/article/international-student-f1-visa-revoked-college-f12320b435b6bf9cf723f1e8eb8c67ae#, https://www.pbs.org/newshour/politics/visa-cancellations-and-deportations-sow-panic-for-international-students"
+Bozeman,Montana State University,China,True,False,"https://apnews.com/article/international-student-f1-visa-revoked-college-f12320b435b6bf9cf723f1e8eb8c67ae#, https://www.pbs.org/newshour/politics/visa-cancellations-and-deportations-sow-panic-for-international-students"
+Mahmoud Khalil,Columbia University,Somalia,True,True,"https://www.justsecurity.org/109069/u-s-ai-driven-catch-and-revoke-initiative-threatens-first-amendment-rights/, https://www.bbc.com/news/articles/c20xq5nd8jeo, https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news"
+Pottratz Acosta,the Mitchell Hamline School of Law,Somalia,True,True,https://sahanjournal.com/education/international-students-data-collection-ice-arrests/
+Doğukan Günaydın,University of Minnesota,Somalia,True,True,https://sahanjournal.com/education/international-students-data-collection-ice-arrests/
+Mohsen Mahdawi,Columbia University,Israel,True,False,"https://www.bbc.com/news/articles/c20xq5nd8jeo, https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news"
+Rumeysa Ozturk,Tufts University,Israel,True,False,https://www.bbc.com/news/articles/c20xq5nd8jeo
+Suri,Georgetown University,Israel,True,False,"https://www.bbc.com/news/articles/c20xq5nd8jeo, https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news"
+Ms Ozturk,Tufts University,Israel,True,False,https://www.bbc.com/news/articles/c20xq5nd8jeo
+Anjan Roy,Missouri State University,Bangladesh,True,False,https://www.pbs.org/newshour/nation/international-students-stripped-of-legal-status-in-the-u-s-are-piling-up-wins-in-court
+Elora Mukherjee,Columbia Law School,El Salvador,True,False,https://www.bbc.com/news/articles/cgm8ekk173zo
+Rasha Alawieh,The Brown University,El Salvador,True,False,https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news
+Kseniia Petrova,Harvard University,El Salvador,True,False,https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news
+Yunseo Chung,Columbia University,El Salvador,True,False,https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news
+Leqaa Kordia,Columbia University,El Salvador,True,False,https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news
+Momodou Taal,"The Cornell University Student"" Taal",El Salvador,True,False,https://www.dhs.gov/news/2025/04/30/100-days-fighting-fake-news
+Umass Amherst,Arizona State University,China,True,False,https://www.acenet.edu/News-Room/Pages/ACE-Assns-Demand-Answers-Visa-Revocations.aspx

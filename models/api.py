@@ -21,8 +21,8 @@ def predict(data: InputData):
     try:
         print("Received input:", data.dict())
 
-        encoded_uni = uni_encoder.transform([data.university])[0]
-        encoded_country = country_encoder.transform([data.country])[0]
+        encoded_uni = int(uni_encoder.transform(pd.DataFrame({'universities':[data.university]}))[0][0])
+        encoded_country = int(country_encoder.transform(pd.DataFrame({'countries':[data.country]}))[0][0])
 
         df = pd.DataFrame([{
             "universities": encoded_uni,
